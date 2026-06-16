@@ -1,0 +1,68 @@
+{
+  "qa_id": "neg_full_05j4tIvoC8o",
+  "ground_truth": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 18.8s to 24.8s",
+        "injection_type": "SEMANTIC_DIVERGENCE",
+        "inconsistency_point": "The infusion of audio bystanders claimed that the car was very expensive and cost more than $50,000, which was in direct contradiction with the value and semantics of the “$28,900” price label clearly shown in the picture."
+      },
+      {
+        "time_range": "from 41.0s to 66.6s",
+        "injection_type": "BACKGROUND_SOUND",
+        "inconsistency_point": "The images show quiet car static interiors and appearances, but the sound injected is the sound of loud heavy machinery (heavy machine) working, and the sound environment is completely different from the static, comfortable car product displays displayed on the scene."
+      },
+      {
+        "time_range": "from 66.6s to 80.2s",
+        "injection_type": "VOICE_IDENTITY",
+        "inconsistency_point": "It was clear that a young woman was speaking, but the audio was injected into a low male voice (Male_Deep), and there was a strong conflict between the visual sex of the speaker and the hearing gender."
+      }
+    ]
+  },
+  "model_answer": "Yes\nfrom 0.0s to 10.0s, The background music of sad (sad) feelings was injected, and the negative, low emotional tone of the music clashed strongly with the positive, dynamic commercial display atmosphere in the picture.\nfrom 10.0s to 20.0s, The sound of heavy machinery (heavy_machinery) was injected, and the noise of industrial machinery was completely incompatible with the quiet, modern car interior and the professional commercial display environment in the image, creating a strong environmental semantic conflict.\nfrom 20.0s to 30.0s, The sound of the waves hitting the beach (ocean_waves) was injected, and the natural sound of the waves was in serious conflict with the geographical context of the car sales site in the image, which was clearly in the city or suburb, in terms of the sound field and the environment.\nfrom 30.0s to 40.0s, The sound of the dog barking (dogs) was injected, and the sound of the animal barking was out of place in the professional commercial display of the car, undermining the original professional and clean audio-visual atmosphere.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 10.0s",
+        "reasoning": "The background music of sad (sad) feelings was injected, and the negative, low emotional tone of the music clashed strongly with the positive, dynamic commercial display atmosphere in the picture."
+      },
+      {
+        "time_range": "from 10.0s to 20.0s",
+        "reasoning": "The sound of heavy machinery (heavy_machinery) was injected, and the noise of industrial machinery was completely incompatible with the quiet, modern car interior and the professional commercial display environment in the image, creating a strong environmental semantic conflict."
+      },
+      {
+        "time_range": "from 20.0s to 30.0s",
+        "reasoning": "The sound of the waves hitting the beach (ocean_waves) was injected, and the natural sound of the waves was in serious conflict with the geographical context of the car sales site in the image, which was clearly in the city or suburb, in terms of the sound field and the environment."
+      },
+      {
+        "time_range": "from 30.0s to 40.0s",
+        "reasoning": "The sound of the dog barking (dogs) was injected, and the sound of the animal barking was out of place in the professional commercial display of the car, undermining the original professional and clean audio-visual atmosphere."
+      }
+    ]
+  },
+  "exists_correct": true,
+  "pred_metrics": [
+    {
+      "iou": 0.42857142857142866,
+      "rouge_l": 30.769230769230766,
+      "meteor": 28.626126126126128,
+      "bleu4": 3.441581648309154
+    },
+    {
+      "iou": 0.0,
+      "rouge_l": 0.0,
+      "meteor": 0.0,
+      "bleu4": 0.0
+    },
+    {
+      "iou": 0.0,
+      "rouge_l": 0.0,
+      "meteor": 0.0,
+      "bleu4": 0.0
+    }
+  ],
+  "soda_m": 3.5052399338113633,
+  "error": null
+}

@@ -1,0 +1,56 @@
+{
+  "qa_id": "neg_full_02zNKcnf4OI",
+  "ground_truth": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 10.2s",
+        "injection_type": "EMOTION_MISMATCH",
+        "inconsistency_point": "The people in the picture are happy and smileful, showing a positive and happy state; and the sound injected is sad, low music, which creates a strong polar clash on the emotional tone."
+      },
+      {
+        "time_range": "from 18.6s to 38.6s",
+        "injection_type": "BACKGROUND_SOUND",
+        "inconsistency_point": "The scenes were entirely indoor, stage or living, with no signs of construction or industrial equipment; while the sound of heavy machinery (e.g. excavators, booms) was injected into the audio, the physical environment was totally incompatible with the semantics of the sound."
+      },
+      {
+        "time_range": "from 48.6s to 64.3s",
+        "injection_type": "BACKGROUND_SOUND",
+        "inconsistency_point": "The images clearly show that the person is in a closed indoor environment and that there is no sign of rain; while the sound of clear outdoor rain is present in audio, causing the meteorological environment to clash with the logic of space and weather in the interior."
+      }
+    ]
+  },
+  "model_answer": "Yes\nfrom 0.0s to 120.1s, The audio features a child singing a song about cookies, but the visual content does not depict any cookies, baking, or related activities.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 120.1s",
+        "reasoning": "The audio features a child singing a song about cookies, but the visual content does not depict any cookies, baking, or related activities."
+      }
+    ]
+  },
+  "exists_correct": true,
+  "pred_metrics": [
+    {
+      "iou": 0.0,
+      "rouge_l": 0.0,
+      "meteor": 0.0,
+      "bleu4": 0.0
+    },
+    {
+      "iou": 0.16652789342214822,
+      "rouge_l": 9.090909090909092,
+      "meteor": 8.23045267489712,
+      "bleu4": 0.8582441792446377
+    },
+    {
+      "iou": 0.0,
+      "rouge_l": 0.0,
+      "meteor": 0.0,
+      "bleu4": 0.0
+    }
+  ],
+  "soda_m": 0.7313349986122676,
+  "error": null
+}

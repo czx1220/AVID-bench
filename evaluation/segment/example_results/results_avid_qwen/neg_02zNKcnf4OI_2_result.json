@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_2",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The images clearly show that the person is in a closed indoor environment and that there is no sign of rain; while the sound of clear outdoor rain is present in audio, causing the meteorological environment to clash with the logic of space and weather in the interior."
+  },
+  "model_answer": "1. Is there inconsistency: Yes\n2. Inconsistency type: VOICE_IDENTITY\n3. Inconsistency point description: Inconsistencies: The image shows a young man singing, but the voice is the voice of a young woman, and the gender identity is completely different.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "injection_type": "VOICE_IDENTITY",
+    "inconsistency_point": "Inconsistencies: The image shows a young man singing, but the voice is the voice of a young woman, and the gender identity is completely different."
+  },
+  "exists_correct": true,
+  "injection_type_correct": false,
+  "rouge_l_score": 27.397260273972602,
+  "meteor_score": 13.31967213114754,
+  "bleu4_score": 0.5519631781059026,
+  "error": null
+}

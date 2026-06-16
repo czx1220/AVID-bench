@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_1",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The scenes were entirely indoor, stage or living, with no signs of construction or industrial equipment; while the sound of heavy machinery (e.g. excavators, booms) was injected into the audio, the physical environment was totally incompatible with the semantics of the sound."
+  },
+  "model_answer": "1. Is there inconsistency: Yes\n2. Inconsistency type: LIP_SYNC\n3. Inconsistency point description: The video shows a young man speaking and moving his mouth in various clips, but the audio track features a child's voice singing a song. The lip movements of the person on screen do not match the words or rhythm of the audio, and the voice type is completely mismatched with the visual identity of the speaker.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "injection_type": "LIP_SYNC",
+    "inconsistency_point": "The video shows a young man speaking and moving his mouth in various clips, but the audio track features a child's voice singing a song. The lip movements of the person on screen do not match the words or rhythm of the audio, and the voice type is completely mismatched with the visual identity of the speaker."
+  },
+  "exists_correct": true,
+  "injection_type_correct": false,
+  "rouge_l_score": 21.782178217821784,
+  "meteor_score": 26.421174853676455,
+  "bleu4_score": 2.629443218389874,
+  "error": null
+}

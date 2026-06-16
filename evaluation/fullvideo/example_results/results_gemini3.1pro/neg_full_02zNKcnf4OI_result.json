@@ -1,0 +1,64 @@
+{
+  "qa_id": "neg_full_02zNKcnf4OI",
+  "ground_truth": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 10.2s",
+        "injection_type": "EMOTION_MISMATCH",
+        "inconsistency_point": "The people in the picture are happy and smileful, showing a positive and happy state; and the sound injected is sad, low music, which creates a strong polar clash on the emotional tone."
+      },
+      {
+        "time_range": "from 18.6s to 38.6s",
+        "injection_type": "BACKGROUND_SOUND",
+        "inconsistency_point": "The scenes were entirely indoor, stage or living, with no signs of construction or industrial equipment; while the sound of heavy machinery (e.g. excavators, booms) was injected into the audio, the physical environment was totally incompatible with the semantics of the sound."
+      },
+      {
+        "time_range": "from 48.6s to 64.3s",
+        "injection_type": "BACKGROUND_SOUND",
+        "inconsistency_point": "The images clearly show that the person is in a closed indoor environment and that there is no sign of rain; while the sound of clear outdoor rain is present in audio, causing the meteorological environment to clash with the logic of space and weather in the interior."
+      }
+    ]
+  },
+  "model_answer": "Yes\nfrom 0.0s to 10.0s, The video shows a man speaking but the voice sounds like a little girl, creating a lip sync mismatch\nfrom 18.0s to 38.0s, A loud static noise is present in the audio, which contradicts the normal indoor and backstage visual scenes\nfrom 48.0s to 65.0s, The loud static noise returns, which contradicts the visual scenes, creating a background sound conflict",
+  "parsed_answer": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 10.0s",
+        "reasoning": "The video shows a man speaking but the voice sounds like a little girl, creating a lip sync mismatch"
+      },
+      {
+        "time_range": "from 18.0s to 38.0s",
+        "reasoning": "A loud static noise is present in the audio, which contradicts the normal indoor and backstage visual scenes"
+      },
+      {
+        "time_range": "from 48.0s to 65.0s",
+        "reasoning": "The loud static noise returns, which contradicts the visual scenes, creating a background sound conflict"
+      }
+    ]
+  },
+  "exists_correct": true,
+  "pred_metrics": [
+    {
+      "iou": 0.9803921568627452,
+      "rouge_l": 26.923076923076927,
+      "meteor": 14.69699585635359,
+      "bleu4": 0.5854653696519259
+    },
+    {
+      "iou": 0.9417475728155339,
+      "rouge_l": 9.836065573770494,
+      "meteor": 11.130360878661087,
+      "bleu4": 1.1122520658140143
+    },
+    {
+      "iou": 0.9235294117647056,
+      "rouge_l": 12.698412698412698,
+      "meteor": 5.252100840336134,
+      "bleu4": 0.23278580154721332
+    }
+  ],
+  "soda_m": 9.913759802885973,
+  "error": null
+}

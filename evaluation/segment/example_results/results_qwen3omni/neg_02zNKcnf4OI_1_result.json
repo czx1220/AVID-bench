@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_1",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The scenes were entirely indoor, stage or living, with no signs of construction or industrial equipment; while the sound of heavy machinery (e.g. excavators, booms) was injected into the audio, the physical environment was totally incompatible with the semantics of the sound."
+  },
+  "model_answer": "1. Is there inconsistency: Yes\n2. Inconsistency type: BACKGROUND_SOUND\n3. Inconsistency point description: The video shows a person in various indoor settings, including a bedroom and a car, with no indication of any food-related activity. However, the audio features a child singing a song about cookies, which is unrelated to the visual content. This creates a background sound conflict, as the audio does not match the scene depicted in the video.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The video shows a person in various indoor settings, including a bedroom and a car, with no indication of any food-related activity. However, the audio features a child singing a song about cookies, which is unrelated to the visual content. This creates a background sound conflict, as the audio does not match the scene depicted in the video."
+  },
+  "exists_correct": true,
+  "injection_type_correct": true,
+  "rouge_l_score": 21.568627450980394,
+  "meteor_score": 22.72324802937048,
+  "bleu4_score": 2.5400289715190976,
+  "error": null
+}

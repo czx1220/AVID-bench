@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_2",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The images clearly show that the person is in a closed indoor environment and that there is no sign of rain; while the sound of clear outdoor rain is present in audio, causing the meteorological environment to clash with the logic of space and weather in the interior."
+  },
+  "model_answer": "1. Is there inconsistency: No\n2. Inconsistency type: \n3. Inconsistency point description: The audio features a child singing a song about making cookies, while the video shows a person with spiky hair and a black outfit, possibly a rock or punk style, in various settings including a stage and a studio. The visual content does not depict any cookie-making activity or related scenes, but the audio and video are consistent in that they both present distinct, unrelated content without any direct interaction or conflict.",
+  "parsed_answer": {
+    "exists": "No",
+    "injection_type": "",
+    "inconsistency_point": "The audio features a child singing a song about making cookies, while the video shows a person with spiky hair and a black outfit, possibly a rock or punk style, in various settings including a stage and a studio. The visual content does not depict any cookie-making activity or related scenes, but the audio and video are consistent in that they both present distinct, unrelated content without any direct interaction or conflict."
+  },
+  "exists_correct": false,
+  "injection_type_correct": false,
+  "rouge_l_score": 16.52892561983471,
+  "meteor_score": 21.238382899628256,
+  "bleu4_score": 0.8286206029972484,
+  "error": null
+}

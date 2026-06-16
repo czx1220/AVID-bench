@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_0",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "EMOTION_MISMATCH",
+    "inconsistency_point": "The people in the picture are happy and smileful, showing a positive and happy state; and the sound injected is sad, low music, which creates a strong polar clash on the emotional tone."
+  },
+  "model_answer": "1. Is there inconsistency: Yes\n2. Inconsistency type: BACKGROUND_CONFLICT\n3. Inconsistency point description: The image was a quiet indoor environment, but the background sound was replaced by noisy urban traffic noise (e.g. car horns, engine noises) and the sound environment was completely incompatible with the visual scene.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_CONFLICT",
+    "inconsistency_point": "The image was a quiet indoor environment, but the background sound was replaced by noisy urban traffic noise (e.g. car horns, engine noises) and the sound environment was completely incompatible with the visual scene."
+  },
+  "exists_correct": true,
+  "injection_type_correct": false,
+  "rouge_l_score": 17.64705882352941,
+  "meteor_score": 19.476439790575917,
+  "bleu4_score": 3.0901532587310254,
+  "error": null
+}

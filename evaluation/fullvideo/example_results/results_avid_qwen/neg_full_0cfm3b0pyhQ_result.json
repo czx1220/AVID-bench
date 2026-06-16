@@ -1,0 +1,80 @@
+{
+  "qa_id": "neg_full_0cfm3b0pyhQ",
+  "ground_truth": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 8.0s",
+        "injection_type": "EMOTION_MISMATCH",
+        "inconsistency_point": "It injects sad, low-intensity background music and creates a strong emotional polarized conflict with modern technology and an active business-advocacy atmosphere that is efficiently packaged in the image."
+      },
+      {
+        "time_range": "from 10.0s to 19.0s",
+        "injection_type": "VOICE_IDENTITY",
+        "inconsistency_point": "The voice of audio is suddenly turned into a young woman, and there is a sudden conflict with the mature male voice pronunciation of the original video, which undermines the consistency of the hearing identity."
+      },
+      {
+        "time_range": "from 54.6s to 61.6s",
+        "injection_type": "SEMANTIC_DIVERGENCE",
+        "inconsistency_point": "The resulting voice text claimed that it was a system that required manual cutting and knotting, which was dangerous and time-consuming, in total contradiction to the machine ' s complete automatic filtration and sealing in the image."
+      }
+    ]
+  },
+  "model_answer": "Yes\nfrom 0.0s to 15.0s, The background music of sad (sad) feelings was injected, and the dynamic, professional corporate image in the picture generated a strong polar conflict on the emotional tone.\nfrom 15.0s to 30.0s, The sound of the waves hitting the beach was injected, and the image was clearly an indoor industrial environment, with the natural sound of the seaside completely out of place in the geographical context.\nfrom 30.0s to 45.0s, The infusion of audio is a TTS voice that describes a “manual hand-operated wrapping machine”, which is in direct contradiction with the semantics of the fully automatic machine displayed in the image.\nfrom 45.0s to 60.0s, The sound of the train whistling and moving was injected, and the image was a static display of the machine, with no train or track, and the sound of the physical source did not match the image object.\nfrom 60.0s to 75.0s, The sound of the dog barking was injected, and the image was a serious industrial equipment operating scene, with the sound of the animal breaking the atmosphere of the industrial environment.\nfrom 75.0s to 90.0s, The sound of the rain was injected, and the image was a dry indoor warehouse environment, with the sound of the weather and the visual environment creating a clear clash of physical logic.\nfrom 90.0s to 105.0s, The infusion of audio is a TTS voice that describes the “high-cost and energy-intensive” machine, which contradicts the positive business messages (e.g., cost-effectiveness) that the image conveys.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 15.0s",
+        "reasoning": "The background music of sad (sad) feelings was injected, and the dynamic, professional corporate image in the picture generated a strong polar conflict on the emotional tone."
+      },
+      {
+        "time_range": "from 15.0s to 30.0s",
+        "reasoning": "The sound of the waves hitting the beach was injected, and the image was clearly an indoor industrial environment, with the natural sound of the seaside completely out of place in the geographical context."
+      },
+      {
+        "time_range": "from 30.0s to 45.0s",
+        "reasoning": "The infusion of audio is a TTS voice that describes a “manual hand-operated wrapping machine”, which is in direct contradiction with the semantics of the fully automatic machine displayed in the image."
+      },
+      {
+        "time_range": "from 45.0s to 60.0s",
+        "reasoning": "The sound of the train whistling and moving was injected, and the image was a static display of the machine, with no train or track, and the sound of the physical source did not match the image object."
+      },
+      {
+        "time_range": "from 60.0s to 75.0s",
+        "reasoning": "The sound of the dog barking was injected, and the image was a serious industrial equipment operating scene, with the sound of the animal breaking the atmosphere of the industrial environment."
+      },
+      {
+        "time_range": "from 75.0s to 90.0s",
+        "reasoning": "The sound of the rain was injected, and the image was a dry indoor warehouse environment, with the sound of the weather and the visual environment creating a clear clash of physical logic."
+      },
+      {
+        "time_range": "from 90.0s to 105.0s",
+        "reasoning": "The infusion of audio is a TTS voice that describes the “high-cost and energy-intensive” machine, which contradicts the positive business messages (e.g., cost-effectiveness) that the image conveys."
+      }
+    ]
+  },
+  "exists_correct": true,
+  "pred_metrics": [
+    {
+      "iou": 0.5333333333333333,
+      "rouge_l": 28.070175438596497,
+      "meteor": 36.95364238410596,
+      "bleu4": 2.592736732419864
+    },
+    {
+      "iou": 0.2,
+      "rouge_l": 26.08695652173913,
+      "meteor": 22.15147272629368,
+      "bleu4": 2.329433681321138
+    },
+    {
+      "iou": 0.325301204819277,
+      "rouge_l": 23.999999999999996,
+      "meteor": 22.14483139856274,
+      "bleu4": 1.9884875959516453
+    }
+  ],
+  "soda_m": 6.268528830250827,
+  "error": null
+}

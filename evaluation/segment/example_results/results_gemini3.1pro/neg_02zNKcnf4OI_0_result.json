@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_0",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "EMOTION_MISMATCH",
+    "inconsistency_point": "The people in the picture are happy and smileful, showing a positive and happy state; and the sound injected is sad, low music, which creates a strong polar clash on the emotional tone."
+  },
+  "model_answer": "1. Is there inconsistency: Yes\n2. Inconsistency type: VOICE_IDENTITY\n3. Inconsistency point description: The video shows a young adult male, but the audio features a high-pitched, child-like voice talking about baking cookies. The voice identity completely contradicts the visual appearance of the person shown in the video.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "injection_type": "VOICE_IDENTITY",
+    "inconsistency_point": "The video shows a young adult male, but the audio features a high-pitched, child-like voice talking about baking cookies. The voice identity completely contradicts the visual appearance of the person shown in the video."
+  },
+  "exists_correct": true,
+  "injection_type_correct": false,
+  "rouge_l_score": 17.391304347826086,
+  "meteor_score": 19.41703216374269,
+  "bleu4_score": 1.541384663606853,
+  "error": null
+}

@@ -1,0 +1,60 @@
+{
+  "qa_id": "neg_full_0cfm3b0pyhQ",
+  "ground_truth": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 8.0s",
+        "injection_type": "EMOTION_MISMATCH",
+        "inconsistency_point": "It injects sad, low-intensity background music and creates a strong emotional polarized conflict with modern technology and an active business-advocacy atmosphere that is efficiently packaged in the image."
+      },
+      {
+        "time_range": "from 10.0s to 19.0s",
+        "injection_type": "VOICE_IDENTITY",
+        "inconsistency_point": "The voice of audio is suddenly turned into a young woman, and there is a sudden conflict with the mature male voice pronunciation of the original video, which undermines the consistency of the hearing identity."
+      },
+      {
+        "time_range": "from 54.6s to 61.6s",
+        "injection_type": "SEMANTIC_DIVERGENCE",
+        "inconsistency_point": "The resulting voice text claimed that it was a system that required manual cutting and knotting, which was dangerous and time-consuming, in total contradiction to the machine ' s complete automatic filtration and sealing in the image."
+      }
+    ]
+  },
+  "model_answer": "Yes\nfrom 0.0s to 12.0s, The background music of sad feelings creates emotional conflict with the lively visual tone\nfrom 12.0s to 12.0s, The sound of rain is injected but no rain is shown in the indoor scene",
+  "parsed_answer": {
+    "exists": "Yes",
+    "inconsistencies": [
+      {
+        "time_range": "from 0.0s to 12.0s",
+        "reasoning": "The background music of sad feelings creates emotional conflict with the lively visual tone"
+      },
+      {
+        "time_range": "from 12.0s to 12.0s",
+        "reasoning": "The sound of rain is injected but no rain is shown in the indoor scene"
+      }
+    ]
+  },
+  "exists_correct": true,
+  "pred_metrics": [
+    {
+      "iou": 0.6666666666666666,
+      "rouge_l": 31.818181818181817,
+      "meteor": 22.22711267605634,
+      "bleu4": 1.6200637896206016
+    },
+    {
+      "iou": 0.0,
+      "rouge_l": 0.0,
+      "meteor": 0.0,
+      "bleu4": 0.0
+    },
+    {
+      "iou": 0.0,
+      "rouge_l": 0.0,
+      "meteor": 0.0,
+      "bleu4": 0.0
+    }
+  ],
+  "soda_m": 5.927230046948358,
+  "error": null
+}

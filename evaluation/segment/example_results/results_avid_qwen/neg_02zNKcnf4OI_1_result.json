@@ -1,0 +1,20 @@
+{
+  "qa_id": "neg_02zNKcnf4OI_1",
+  "ground_truth": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The scenes were entirely indoor, stage or living, with no signs of construction or industrial equipment; while the sound of heavy machinery (e.g. excavators, booms) was injected into the audio, the physical environment was totally incompatible with the semantics of the sound."
+  },
+  "model_answer": "1. Is there inconsistency: Yes\n2. Inconsistency type: BACKGROUND_SOUND\n3. Inconsistency point description: The image is a quiet indoor bedroom environment, but the background sound is a loud sound of heavy machinery, and the physical environment is completely incompatible with the sound environment.",
+  "parsed_answer": {
+    "exists": "Yes",
+    "injection_type": "BACKGROUND_SOUND",
+    "inconsistency_point": "The image is a quiet indoor bedroom environment, but the background sound is a loud sound of heavy machinery, and the physical environment is completely incompatible with the sound environment."
+  },
+  "exists_correct": true,
+  "injection_type_correct": true,
+  "rouge_l_score": 38.35616438356165,
+  "meteor_score": 27.087133752223952,
+  "bleu4_score": 8.891501559947804,
+  "error": null
+}
