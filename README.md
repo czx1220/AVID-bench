@@ -5,23 +5,22 @@
 ### Benchmarking Audio-Visual Inconsistency Understanding for Omni-Modal Language Models
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.13593-b31b1b.svg)](https://arxiv.org/abs/2604.13593)
-[![EMNLP 2026](https://img.shields.io/badge/EMNLP-2026-blue.svg)](https://2026.emnlp.org/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow.svg)](https://huggingface.co/datasets/czx1220/AVID-Bench)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 
-[Zixuan Chen]()\*,
-[Depeng Wang]()\*,
+[Zixuan Chen](),
+[Depeng Wang](),
 [Hao Lin](),
 [Li Luo](),
 [Ke Xu](),
-[Ya Guo]()\*\*,
+[Ya Guo](),
 [Huijia Zhu](),
 [Tanfeng Sun](),
-[Xinghao Jiang]()\*\*
+[Xinghao Jiang]()\*
 
-_Shanghai Jiao Tong University, Ant Group, The Chinese University of Hong Kong_
+_Shanghai Jiao Tong University, Ant Group_
 
-(\* Equal Contribution, \*\* Corresponding Author)
+(\* Corresponding Author)
 
 <img src="assets/intro_fig.png" width="90%">
 
