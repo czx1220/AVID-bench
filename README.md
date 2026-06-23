@@ -5,7 +5,7 @@
 ### Benchmarking Audio-Visual Inconsistency Understanding for Omni-Modal Language Models
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.13593-b31b1b.svg)](https://arxiv.org/abs/2604.13593)
-[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow.svg)](https://huggingface.co/datasets/Chen-15/AVID)
+[![ModelScope](https://img.shields.io/badge/ModelScope-Dataset-blue.svg)](https://modelscope.cn/datasets/czx13927247324/AVID)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 
 [Zixuan Chen](),
