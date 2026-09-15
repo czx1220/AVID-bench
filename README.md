@@ -59,21 +59,21 @@ pip install -r requirements.txt
 
 ### 2. Download Dataset
 
-The full dataset is hosted on [HuggingFace](https://huggingface.co/datasets/czx1220/AVID-Bench).
+The full dataset is hosted on [ModelScope](https://modelscope.cn/datasets/czx13927247324/AVID).
 
 ```bash
-pip install -U huggingface_hub
+pip install -U modelscope
 
 # Download annotations only (~61MB, recommended to start)
-huggingface-cli download czx1220/AVID-Bench --repo-type dataset \
-    --include "annotations/*" --local-dir ./data
+modelscope download --dataset czx13927247324/AVID \
+    --include "annotations/*" --local_dir ./data
 
 # Download test set videos (~84GB)
-huggingface-cli download czx1220/AVID-Bench --repo-type dataset \
-    --include "test_1171/*" "test_1171_segments/*" --local-dir ./data
+modelscope download --dataset czx13927247324/AVID \
+    --include "test_1171/*" "test_1171_segments/*" --local_dir ./data
 
 # Download full dataset (~415GB, including training set)
-huggingface-cli download czx1220/AVID-Bench --repo-type dataset --local-dir ./data
+modelscope download --dataset czx13927247324/AVID --local_dir ./data
 ```
 
 ### 3. Data Layout
